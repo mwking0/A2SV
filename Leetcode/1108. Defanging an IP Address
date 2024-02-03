@@ -1,0 +1,9 @@
+class Solution(object):
+    def defangIPaddr(self, address):
+        s=address[0]
+        for i in range(len(address)-1):
+            if address[i+1]==".":
+                s+="[.]"
+            else:
+                s+=address[i+1]
+        return s
