@@ -1,0 +1,9 @@
+class Solution(object):
+    def findTheDifference(self, s, t):
+        sc=0
+        tc=0
+        for i in range(len(s)):
+            sc+=ord(s[i])
+            tc+=ord(t[i])
+        tc+=ord(t[-1])
+        return chr(tc-sc)
