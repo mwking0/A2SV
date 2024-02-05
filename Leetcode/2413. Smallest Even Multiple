@@ -1,0 +1,8 @@
+class Solution(object):
+    def smallestEvenMultiple(self, n):
+        n0=n
+        while (True):
+            if (n0%n)==0 and (n0%2)==0:
+                break
+            n0=n0*2
+        return n0
