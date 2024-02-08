@@ -1,0 +1,4 @@
+class Solution(object):
+    def containsDuplicate(self, nums):
+        numSet = list(set(nums))
+        return not (len(numSet) == len(nums))
